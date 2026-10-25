@@ -1,0 +1,16 @@
+:root{--red:#b3202a;--green:#1f6b45;--gold:#e8b44a;--cream:#fffaf2;--ink:#2b2220}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}section{padding:48px 0}
+h1,h2{line-height:1.2}h1{font-size:2rem;margin:.3em 0}h2{font-size:1.5rem;color:var(--green)}
+.hero{background:linear-gradient(160deg,var(--red),#7d141c);color:#fff;text-align:center;padding:56px 0}
+.hero p{font-size:1.1rem;opacity:.95}.tag{display:inline-block;background:var(--gold);color:var(--ink);border-radius:999px;padding:4px 12px;font-size:.8rem;font-weight:700}
+.prov{display:inline-block;background:#fff3cd;color:#7a5a00;border:1px dashed #c9a227;border-radius:6px;padding:2px 8px;font-size:.75rem;font-weight:600;margin:4px 0}
+.btn{display:inline-block;background:var(--gold);color:var(--ink);font-weight:800;text-decoration:none;padding:16px 28px;border-radius:12px;font-size:1.1rem;box-shadow:0 4px 0 #b88a2a;margin-top:12px}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #b88a2a}.price{font-size:1.6rem;font-weight:800;margin-top:16px}
+.card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.06);margin:12px 0}
+ul.check{list-style:none;padding:0}ul.check li{padding-left:28px;position:relative;margin:8px 0}ul.check li:before{content:"🎄";position:absolute;left:0}
+ol.recipes{columns:1;padding-left:22px}.alt{background:#fff}
+details{background:#fff;border-radius:10px;padding:14px 16px;margin:10px 0;box-shadow:0 1px 6px rgba(0,0,0,.05)}summary{font-weight:700;cursor:pointer}
+.final{background:var(--green);color:#fff;text-align:center}.final h2{color:#fff}footer{text-align:center;font-size:.85rem;padding:24px;color:#6b5f5a}
+@media(min-width:720px){h1{font-size:2.8rem}ol.recipes{columns:2}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}}
+.card h3{margin:0 0 6px;color:var(--red);font-size:1.05rem}.card ul{margin:0;padding-left:20px}
