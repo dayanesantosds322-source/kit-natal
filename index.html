@@ -15,7 +15,10 @@ fbq("track","ViewContent",{content_name:"Kit Natal: receitas para vender"});
 var HOTMART_CHECKOUT_URL = "https://pay.hotmart.com/L108181654E";
 document.addEventListener("DOMContentLoaded",function(){
   document.querySelectorAll("a.cta").forEach(function(a){
-    a.href = HOTMART_CHECKOUT_URL;
+    var q=new URLSearchParams(location.search),o=new URLSearchParams();
+    q.forEach(function(v,k){ if(k==="fbclid"||k==="src"||k==="sck"||k.indexOf("utm_")===0) o.set(k,v); });
+    var qs=o.toString();
+    a.href = HOTMART_CHECKOUT_URL + (qs ? (HOTMART_CHECKOUT_URL.indexOf("?")<0?"?":"&") + qs : "");
     a.addEventListener("click",function(){ if(window.fbq) fbq("track","InitiateCheckout"); });
   });
 });
